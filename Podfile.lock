@@ -1,0 +1,21 @@
+PODS:
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - YYKit (1.0.4):
+    - YYKit/no-arc (= 1.0.4)
+  - YYKit/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - ReactiveCocoa (~> 2.5)
+  - YYKit (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  YYKit: 71f7e48cc5de6c69b5c35fee4d3978dac3267041
+
+COCOAPODS: 0.38.2

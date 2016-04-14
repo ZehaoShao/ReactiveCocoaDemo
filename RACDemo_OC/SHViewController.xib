@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHViewController">
+            <connections>
+                <outlet property="mBtn" destination="nne-Fd-1QX" id="PqH-nt-MH7"/>
+                <outlet property="mField" destination="hMJ-E0-hiY" id="Vcf-TU-rEY"/>
+                <outlet property="mField1" destination="a0B-ai-c9g" id="JVu-ZN-dLB"/>
+                <outlet property="mView" destination="Lbl-p3-8CB" id="HoC-5U-8YH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nne-Fd-1QX">
+                    <rect key="frame" x="164" y="319" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMJ-E0-hiY">
+                    <rect key="frame" x="88" y="349" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="UqH-Zp-pcw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-ai-c9g">
+                    <rect key="frame" x="88" y="409" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="JyS-JV-SCq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI5-qo-fXt">
+                    <rect key="frame" x="144" y="240" width="88" height="30"/>
+                    <state key="normal" title="rac_delegate"/>
+                    <connections>
+                        <action selector="racDelegateBtnClick:" destination="-1" eventType="touchUpInside" id="Xxi-wx-x6a"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lbl-p3-8CB">
+                    <rect key="frame" x="75" y="463" width="240" height="52"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="gbq-eJ-LXz"/>
+                        <constraint firstAttribute="width" constant="240" id="oNh-oN-Qb0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="a0B-ai-c9g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1oz-ZT-Lih"/>
+                <constraint firstItem="Lbl-p3-8CB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CwG-pY-Xoq"/>
+                <constraint firstItem="LI5-qo-fXt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PZt-ob-5oB"/>
+                <constraint firstItem="nne-Fd-1QX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SBl-nH-vQJ"/>
+                <constraint firstItem="a0B-ai-c9g" firstAttribute="top" secondItem="hMJ-E0-hiY" secondAttribute="bottom" constant="30" id="b9g-I7-LWd"/>
+                <constraint firstItem="nne-Fd-1QX" firstAttribute="top" secondItem="LI5-qo-fXt" secondAttribute="bottom" constant="49" id="bAw-cz-gtE"/>
+                <constraint firstItem="hMJ-E0-hiY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jFM-cc-6eN"/>
+                <constraint firstItem="Lbl-p3-8CB" firstAttribute="top" secondItem="a0B-ai-c9g" secondAttribute="bottom" constant="24" id="jFi-2V-hj4"/>
+                <constraint firstItem="hMJ-E0-hiY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="lO9-nn-p7W"/>
+                <constraint firstItem="nne-Fd-1QX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uvn-3x-g3U"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
